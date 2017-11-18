@@ -24,6 +24,8 @@ class Triangle
   end
 
   class TriangleError < StandardError
-    "Triangles must have 3 non-negative sides. The sum of any two sides must be greater than the 3rd side"
+    def message
+      "Triangles must have 3 non-negative sides. The sum of any two sides must be greater than the 3rd side"
+    end
   end
 end
