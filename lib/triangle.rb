@@ -24,4 +24,3 @@ class TriangleError < StandardError
   end
 end
 
-puts Triangle.new(0, 0 , 0).kind
