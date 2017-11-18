@@ -27,3 +27,5 @@ class TriangleError < StandardError
     "Triangles must have 3 non-negative sides. The sum of any two sides must be greater than the 3rd side"
   end
 end
+
+puts Triangle.new(0, 0 , 0).kind
