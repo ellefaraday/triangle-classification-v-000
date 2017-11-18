@@ -22,10 +22,10 @@ class Triangle
       :scalene
     end
   end
+end
 
-  class TriangleError < StandardError
-    def message
-      "Triangles must have 3 non-negative sides. The sum of any two sides must be greater than the 3rd side"
-    end
+class TriangleError < StandardError
+  def message
+    "Triangles must have 3 non-negative sides. The sum of any two sides must be greater than the 3rd side"
   end
 end
