@@ -7,11 +7,7 @@ class Triangle
 
   def kind
     if @side_a <= 0 || @side_b <= 0 || @side_c <= 0 || (@side_a + @side_b) <= @side_c || (@side_c + @side_b) <= @side_a || (@side_a + @side_c) <= @side_b
-      begin
         raise TriangleError
-      rescue TriangleError => error
-        puts error.message
-      end
     elsif @side_a == @side_b && @side_b == @side_c
       :equilateral
     elsif @side_a == @side_b || @side_b == @side_c || @side_c == @side_a
